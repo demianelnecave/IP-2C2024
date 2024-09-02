@@ -225,3 +225,23 @@ ej_4c_distanciaPuntos :: (Float, Float) -> (Float, Float) -> Float
 --}
 ej_4c_distanciaPuntos (x1, y1) (x2, y2) =
   sqrt ((x1 - x2) ^ 2 + (y1 - y2) ^ 2)
+
+-- * Ej 4.d
+ej_4d_sumaTerna :: (Integer, Integer, Integer) -> Integer
+{--
+  problema sumaTerna(t: (ZxZxZ)): Z {
+    Requiere: {True}
+    Asegura: {res = t_1 + t_2 + t_3}
+  }
+--}
+ej_4d_sumaTerna (x, y, z) = x + y + z
+
+-- * Ej 4.e
+ej_4e_sumarSoloMultiplos :: (Integer, Integer, Integer) -> Integer -> Integer
+{--
+  problema sumarSoloMultiplos(t: (ZxZxZ), n:Z): Z {
+    Requiere: {n > 0}
+    Asegura: {res = suma de elementos de t que sean múltiplos de n}
+  }
+--}
+ej_4e_sumarSoloMultiplos (x, y, z) n = 
